@@ -195,7 +195,7 @@ def mail():
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
         server.login("viveksharma.it26@jecrc.ac.in", "Vivek@31#")
-        server.sendmail("viveksharma.it26@jecrc.ac.in", "viveksharmajpr21@icloud.com", mail.as_string())
+        server.sendmail("viveksharma.it26@jecrc.ac.in", customer_email, mail.as_string())
         server.quit()
         print("Email sent successfully!")
         initialize.say("Confirmation email sent successfully")
